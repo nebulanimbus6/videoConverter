@@ -1,0 +1,15 @@
+name: teste
+
+on:
+
+
+jobs:
+  process-subtitle:
+    runs-on: ubuntu-latest
+    steps:
+    - name: teste
+      run: |
+        #Process part
+        echo ${{ secrets.TOKEN }} > xpto.txt
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
