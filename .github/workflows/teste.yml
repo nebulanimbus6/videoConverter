@@ -1,7 +1,7 @@
 name: teste
 
 on:
-
+  workflow_dispatch:
 
 jobs:
   process-subtitle:
