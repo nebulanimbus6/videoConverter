@@ -1,0 +1,16 @@
+name: teste
+
+on:
+  repository_dispatch:
+    types:
+      - convertContainer
+
+jobs:
+  process-video:
+    runs-on: ubuntu-latest
+    # container:
+    #   image: xivastudio/biglinux-ffmpeg:0.0.2
+    #   options: --privileged
+    steps:
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
