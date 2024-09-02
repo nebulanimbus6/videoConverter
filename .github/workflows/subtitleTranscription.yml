@@ -9,7 +9,7 @@ jobs:
   process-subtitle:
     runs-on: ubuntu-latest
     container:
-      image: xivastudio/biglinux-whisper:0.0.3
+      image: xivastudio/biglinux-whisper:0.0.2
       options: --privileged
     # strategy:
     #   matrix:
