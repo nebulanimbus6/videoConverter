@@ -3,7 +3,7 @@ name: Video Converter
 on:
   repository_dispatch:
     types:
-      - videoConverter
+      - videoConverter_*
 
 jobs:
   process-video:
