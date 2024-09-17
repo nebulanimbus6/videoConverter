@@ -106,7 +106,7 @@ jobs:
     - name: Upload videos to bucket
       uses: jakejarvis/s3-sync-action@master
       env:
-        AWS_S3_BUCKET: ${{ secrets.S3_R2_BUCKET }}/${{ env.videoName }}
+        AWS_S3_BUCKET: ${{ secrets.S3_R2_BUCKET }}/${{ github.event.client_payload.user }}/${{ env.videoName }}
         AWS_ACCESS_KEY_ID: ${{ secrets.S3_R2_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.S3_R2_SECRET_ACCESS_KEY }}
         AWS_S3_ENDPOINT: https://${{ secrets.S3_R2_ENDPOINT }}
